@@ -1,0 +1,119 @@
+*{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-size: large;
+  font-weight: 500;
+}
+
+body {
+  /* background-color: rgb(255, 151, 151); */
+  background-image: url('https://storage.ko-fi.com/cdn/useruploads/post/be46690c-d1b7-47ac-9e0b-56fedd0c2410_ghostkittykittyghost_horiz_preview.png');
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  background-size: 100% ;
+
+}
+
+.TodoWrapper{
+  display:flex;
+  flex-direction: column;
+  /* background-color: rgba(0, 0, 0, 0); */
+  backdrop-filter: blur(3px);
+  box-shadow: 10px 20px 20px rgba(255, 255, 255, 0.201);
+  border: none;
+  border-radius: 20px;
+  color: black ;
+  margin: auto;
+  width: 34% ;
+  /* justify-content: space-between; */
+  /* align-content:center; */
+}
+
+.TodoWrapper h1{
+  font-size: 2.3em;
+  color: white;
+  font-weight: 800;
+}
+
+.TodoForm{
+  /* background-color: #0000004c; */
+  border-radius: 10px;
+  display: flex;
+  margin: 8px 20px 30px 20px;
+  /* padding: 30px; */
+  justify-content: space-evenly;
+}
+
+.todo-input{
+  border-radius: 20px;
+  color: azure;
+  background: #1f1f1f3b;
+  font-weight: 600;
+}
+
+.todo-input::placeholder{
+  color: azure;
+  font-weight: 600;
+  
+  
+  transition: opacity 0.5s;
+}
+.todo-input:focus::placeholder{
+  opacity: 0;
+}
+
+.todo-btn{
+  border-radius: 10px;
+  background: #19f39fb4;
+}
+
+.Todo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgba(128, 128, 128, 0.448);
+  background-color: #1f1f1fa1;
+  border-radius: 30px;
+  margin:  5px 20px;
+  height: 40px;
+  /* padding: 10px; */
+}
+.Todo #text{
+  font-size: 1.1rem;
+  font-weight: 600;
+  width: 80%;
+  cursor: pointer;
+  color: white;
+}
+
+.Todo .completed{
+  text-decoration: line-through;
+  color:rgb(252, 251, 251);
+}
+
+.Todo .icons{
+  display: flex;
+}
+
+#edit{
+  color: rgba(124, 183, 255, 0.797);
+  padding: 0 10px;
+}
+
+#trash{
+  color: rgb(250, 64, 89);
+  padding: 0 10px;
+}
+
+.EditTodoForm{
+  /* background-color: #0000004c; */
+  border-radius: 10px;
+  display: flex;
+  margin: 8px 20px 30px 20px;
+  /* padding: 30px; */
+  justify-content: space-evenly;
+}
+
+.EditTodoForm .todo-btn{
+  background-color: #2076f7;
+}
